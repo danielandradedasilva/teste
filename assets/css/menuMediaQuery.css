@@ -112,7 +112,7 @@ header.header-top {
         right: 0;
         width: 50vw;
         height: 100vh;
-        margin-top: -80px;
+        margin-top: -85px;
         background-color: var(--bg-mainDark);
         flex-direction: column;
         align-items: center;
@@ -203,18 +203,27 @@ header.header-top {
 
 @media screen and (max-width: 580px) {
     .mobile-menu {
-        margin-left: 350px;
+        margin-left: 500px;
     }
     .logoheader {
-        margin-right: 270px;
+        margin-right: 400px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .mobile-menu {
+        margin-left: 400px;
+    }
+    .logoheader {
+        margin-right: 300px;
     }
 }
 
 @media screen and (min-width: 320px) {
     .mobile-menu {
-        margin-right: 100px;
+        margin-left: 250px;
     }
     .logoheader {
-        margin-left: 180px;
+        margin-right: 90px;
     }
 }

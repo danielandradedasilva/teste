@@ -7,7 +7,7 @@ header.header-top {
     align-content: center;
     flex-wrap: nowrap;
     position: fixed;
-    height: 12vh;
+    height: 13vh;
     width: 100%;
     z-index: 2;
     border-bottom: 1px solid var(--transparent-strokes);
@@ -15,8 +15,8 @@ header.header-top {
 
 .logoheader {
     width: 200px;
-    height: 50px;
-    margin-left: 20px;
+    height: 45px;
+    margin-left: 4%;
     cursor: pointer;
     filter: drop-shadow(rgba(255, 0, 0, 0.16) 0px 1px 1px), brightness(0);
     transition: .3s ease all;
@@ -27,8 +27,9 @@ header.header-top {
 }
 
 .nav {
-    width: 700px;
+    width: 670px;
     height: 60px;
+    margin-right: 1%;
     line-height: 60px;
     display: flex;
 }
@@ -39,9 +40,9 @@ header.header-top {
 }
 
 .nav-itens img {
-    height: 32px;
-    width: 32px;
-    margin-left: -38px;
+    height: 28px;
+    width: 28px;
+    margin-left: -33px;
     margin-top: 8px;
     position: absolute;
 }
@@ -114,14 +115,14 @@ header.header-top {
     background-color: #ff0000;
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1000px) {
     .nav-item {
         position: absolute;
         top: 12vh;
         right: 0;
         width: 70vw;
-        height: 110vh;
-        margin-top: -85px;
+        height: 100vh;
+        margin-top: -56px;
         background-color: var(--bg-mainDark);
         flex-direction: column;
         flex-wrap: nowrap;
@@ -161,6 +162,16 @@ header.header-top {
         opacity: 1;
         font-size: 1em;
     }
+    .nav button.btn-link::before {
+        content: '';
+        background: url(../img/png/email.png) no-repeat center / contain;
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        margin-right: -3px;
+        margin-top: -12px;
+        position: relative;
+    }
     .nav-item button.btn-link:hover {
         transform: scale(1);
         background: none;
@@ -169,7 +180,7 @@ header.header-top {
     .mobile-menu {
         display: block;
         position: absolute;
-        margin-right: -450px;
+        margin-right: -80%;
         z-index: 1000;
         background: none;
     }
@@ -181,9 +192,6 @@ header.header-top {
     }
     .mobile-menu .line3 {
         background-color: rgb(232, 162, 11);
-    }
-    .logoheader {
-        margin-left: 120px;
     }
     .nav-item.active {
         transform: translateX(0);
@@ -200,49 +208,12 @@ header.header-top {
     }
 }
 
-@media screen and (max-width: 860px) {
-    .mobile-menu {
-        margin-left: 650px;
-    }
-    .logoheader {
-        margin-right: 600px;
-    }
-}
+@media screen and (max-width: 860px) {}
 
-@media screen and (max-width: 760px) {
-    .mobile-menu {
-        margin-right: -250px;
-    }
-    .logoheader {
-        margin-left: 80px;
-    }
-}
+@media screen and (max-width: 760px) {}
 
-@media screen and (max-width: 580px) {
-    .mobile-menu {
-        margin-right: -150px;
-    }
-    .logoheader {
-        margin-left: 100px;
-    }
-}
+@media screen and (max-width: 580px) {}
 
-@media screen and (max-width: 450px) {
-    .mobile-menu {
-        margin-right: -70px;
-    }
-    .logoheader {
-        margin-left: 50px;
-    }
-}
+@media screen and (max-width: 450px) {}
 
-@media screen and (min-width: 320px) {
-    .mobile-menu {
-        margin-left: 180px;
-    }
-    .logoheader {
-        width: 160px;
-        height: 45px;
-        margin-right: 100px;
-    }
-}
+@media screen and (min-width: 320px) {}

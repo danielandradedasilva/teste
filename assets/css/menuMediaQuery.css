@@ -116,6 +116,9 @@ header.header-top {
 }
 
 @media screen and (max-width: 1000px) {
+    header.header-top {
+        height: 10vh;
+    }
     .nav-item {
         position: absolute;
         top: 110px;
@@ -138,6 +141,7 @@ header.header-top {
     }
     .nav-item .nav-itens:nth-child(1) {
         margin-left: 20px;
+        margin-top: -80px;
         opacity: 0;
     }
     .nav-item .nav-itens:nth-child(2) {
@@ -153,12 +157,12 @@ header.header-top {
         border-bottom: none;
     }
     .nav-item button.btn-link {
-        width: 140px;
+        width: 100px;
         margin-right: 55px;
-        margin-top: -50px;
+        margin-top: -40px;
         border: none;
         opacity: 1;
-        font-size: 1em;
+        font-size: .9em;
     }
     .nav button.btn-link::before {
         content: '';
@@ -166,7 +170,7 @@ header.header-top {
         display: inline-block;
         width: 28px;
         height: 28px;
-        margin-right: -3px;
+        margin-right: -2px;
         margin-top: -12px;
         position: relative;
     }
@@ -216,7 +220,12 @@ header.header-top {
 
 @media screen and (min-width: 320px) {
     .nav-item {
-        height: 111vh;
+        height: 100vh;
         margin-top: -110px;
+    }
+    .nav-item .nav-itens:nth-child(1) {
+        margin-left: 20px;
+        margin-top: 20px;
+        opacity: 0;
     }
 }

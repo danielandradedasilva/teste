@@ -124,7 +124,6 @@ header.header-top {
         height: 100vh;
         background-color: var(--bg-mainDark);
         flex-direction: column;
-        flex-wrap: nowrap;
         align-items: center;
         justify-content: center;
         transform: translateX(100%);

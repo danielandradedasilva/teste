@@ -115,14 +115,14 @@
         }
         .card-sec-container-content {
             width: 90%;
-            height: 48vh;
+            height: 50vh;
             margin-top: -50px;
             padding: 0 40px;
             text-align: center;
         }
         .title-card-sec {
             margin-top: -5px;
-            font-size: 1.7em;
+            font-size: 1.6em;
         }
         .subtitle-card-sec {
             text-align: start;
@@ -144,9 +144,9 @@
             justify-content: center;
         }
         .btn-link-home {
-            width: 270px;
-            height: 33px;
+            width: 255px;
+            height: 35px;
             font-size: 1.1em;
-            color: yellow;
+            color: rgb(25, 0, 255);
         }
     }

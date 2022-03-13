@@ -84,16 +84,16 @@
             width: 80%;
             height: 400px;
         }
-        .img-home>img {
-            width: 270px;
-            height: 400px;
-            margin-top: 50px;
-        }
         .title-card-sec {
             font-size: 2.3em;
         }
         .subtitle-card-sec {
             font-size: 1.7em;
+        }
+        .img-home>img {
+            width: 270px;
+            height: 400px;
+            margin-top: 50px;
         }
         .buttons {
             display: flex;
@@ -111,36 +111,36 @@
     
     @media screen and (max-width: 530px) {
         .section-home {
-            height: 120vh;
+            height: 95vh;
         }
         .card-sec-container-content {
             width: 95%;
-            height: 55vh;
-            margin-top: -50px;
-            padding: 0 20px;
-        }
-        .img-home>img {
-            width: 250px;
-            height: 380px;
-            margin-top: 1vh;
+            height: 36vh;
+            margin-top: -70px;
+            padding: 0 10px;
         }
         .title-card-sec {
-            margin-top: 1vh;
-            font-size: 1.4em;
+            margin-top: -5px;
+            font-size: 1.5em;
         }
         .subtitle-card-sec {
-            margin-top: 40px;
-            font-size: 1.5em;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+        .img-home>img {
+            width: 220px;
+            height: 360px;
+            margin-top: -10px;
         }
         .buttons {
             display: flex;
             flex-direction: column;
             gap: 15px;
-            margin-top: 50px;
+            margin-top: 20px;
             justify-content: center;
         }
         .btn-link-home {
-            width: 250px;
+            width: 270px;
             height: 33px;
             font-size: 1.1em;
         }

@@ -2,22 +2,24 @@
 
 header.header-top {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     align-content: center;
+    flex-direction: row;
     flex-wrap: nowrap;
     position: fixed;
     height: 13vh;
     width: 100%;
+    padding: 0 65px;
     z-index: 2;
     border-bottom: 1px solid var(--transparent-strokes);
 }
 
 .logoheader {
-    width: 200px;
-    height: 45px;
-    margin-left: 4%;
+    width: 220px;
+    height: 50px;
     cursor: pointer;
+    filter: brightness(1.2);
     filter: drop-shadow(rgba(255, 0, 0, 0.16) 0px 1px 1px), brightness(0);
     transition: .3s ease all;
 }
@@ -27,23 +29,22 @@ header.header-top {
 }
 
 .nav {
-    width: 670px;
+    width: 635px;
     height: 60px;
-    margin-right: 1%;
     line-height: 60px;
     display: flex;
 }
 
 .nav-item {
     display: flex;
-    gap: 65px;
+    gap: 55px;
 }
 
 .nav-itens img {
-    height: 28px;
-    width: 28px;
-    margin-left: -33px;
-    margin-top: 8px;
+    height: 20px;
+    width: 20px;
+    margin-top: 18px;
+    margin-left: -24px;
     position: absolute;
 }
 
@@ -54,8 +55,8 @@ header.header-top {
 }
 
 .nav button.btn-link {
-    width: 175px;
-    height: 38px;
+    width: 145px;
+    height: 35px;
     background-color: transparent;
     border: .1em solid var(--color-purple-ligth);
     color: var(--text-white);
@@ -66,15 +67,15 @@ header.header-top {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 10px;
 }
 
 .nav button.btn-link::before {
     content: '';
-    background: url(../img/png/email.png) no-repeat center / contain;
+    background: url(../img/svg/paper-plane-free-icon-font2.svg)no-repeat center center/ contain;
     display: inline-block;
-    width: 28px;
-    height: 28px;
+    width: 18px;
+    height: 18px;
     position: relative;
 }
 
@@ -85,11 +86,16 @@ header.header-top {
     font-size: 1em;
 }
 
+.nav button.btn-link:hover::before {
+    background: url(../img/svg/paper-plane-free-icon-font.svg)no-repeat center center/ contain;
+}
+
 
 /*Menu-Mobile*/
 
 .mobile-menu {
     cursor: pointer;
+    margin-left: 62%;
     display: none;
 }
 
@@ -115,13 +121,10 @@ header.header-top {
     background-color: #ff0000;
 }
 
-@media screen and (max-width: 1000px) {
-    header.header-top {
-        height: 10vh;
-    }
+@media screen and (max-width: 1023px) {
     .nav-item {
         position: absolute;
-        top: 110px;
+        top: 0px;
         right: 0;
         width: 70vw;
         height: 100vh;
@@ -158,7 +161,7 @@ header.header-top {
     }
     .nav-item button.btn-link {
         width: 100px;
-        margin-right: 55px;
+        margin-right: 49px;
         margin-top: -40px;
         border: none;
         opacity: 1;
@@ -166,12 +169,12 @@ header.header-top {
     }
     .nav button.btn-link::before {
         content: '';
-        background: url(../img/png/email.png) no-repeat center / contain;
+        background: url(../img/svg/paper-plane-free-icon-font\ \(1\).svg) no-repeat center / contain;
         display: inline-block;
-        width: 28px;
-        height: 28px;
-        margin-right: -2px;
-        margin-top: -12px;
+        width: 20px;
+        height: 20px;
+        margin-right: -6px;
+        margin-top: -5px;
         position: relative;
     }
     .nav-item button.btn-link:hover {
@@ -182,7 +185,6 @@ header.header-top {
     .mobile-menu {
         display: block;
         position: absolute;
-        margin-right: -80%;
         z-index: 1000;
         background: none;
     }
@@ -218,14 +220,4 @@ header.header-top {
 
 @media screen and (max-width: 450px) {}
 
-@media screen and (min-width: 320px) {
-    .nav-item {
-        height: 100vh;
-        margin-top: -110px;
-    }
-    .nav-item .nav-itens:nth-child(1) {
-        margin-left: 20px;
-        margin-top: 20px;
-        opacity: 0;
-    }
-}
+@media screen and (min-width: 320px) {}

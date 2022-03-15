@@ -154,7 +154,7 @@
             width: 255px;
             height: 35px;
             font-size: 1.1em;
-            color: rgb(51, 255, 0);
+            color: rgb(0, 183, 255);
         }
     }
     
@@ -172,7 +172,8 @@
         .card-sec-container-content {
             width: 85%;
             height: 85%;
-            margin-top: -20px;
+            margin-top: -40px;
+            margin-left: 30px;
             text-align: center;
             padding: 0 25px;
         }
@@ -189,7 +190,7 @@
         .img-home>img {
             width: 280px;
             height: 350px;
-            margin: 660px 0 0 25px;
+            margin: 590px 0 0 25px;
             position: relative;
         }
         .buttons {
@@ -223,6 +224,7 @@
             width: 80%;
             height: 85%;
             margin-top: -20px;
+            margin-left: 30px;
             text-align: center;
             padding: 0 25px;
         }

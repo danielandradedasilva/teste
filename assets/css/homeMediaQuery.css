@@ -171,21 +171,21 @@
         }
         .card-sec-container-content {
             width: 85%;
-            height: 85%;
+            height: 90%;
             margin-top: -40px;
             margin-left: 30px;
             text-align: center;
-            padding: 0 25px;
+            padding: 0 50px;
         }
         .title-card-sec {
             text-align: center;
-            margin-top: -5px;
-            font-size: 1.4em;
+            margin-top: -4px;
+            font-size: 1.5em;
         }
         .subtitle-card-sec {
             text-align: center;
             margin-top: 20px;
-            font-size: 1.1em;
+            font-size: 1.2em;
         }
         .img-home>img {
             width: 280px;
@@ -196,15 +196,15 @@
         .buttons {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 20px;
             margin-top: 35px;
             justify-content: center;
         }
         .btn-link-home {
-            width: 195px;
-            height: 32px;
-            font-size: 1em;
-            line-height: 30px;
+            width: 205px;
+            height: 35px;
+            padding: 5px;
+            font-size: 1.1em;
             color: rgb(255, 115, 0);
         }
     }

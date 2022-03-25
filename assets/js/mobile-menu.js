@@ -1,10 +1,11 @@
 /**Mobile-menu */
 
 class MobileNavBar {
-    constructor(mobileMenu, navList, navLinks, navLinksBtnContato) {
+    constructor(mobileMenu, navList, navLinks) {
         this.mobileMenu = document.querySelector(mobileMenu);
         this.navList = document.querySelector(navList);
         this.navLinks = document.querySelectorAll(navLinks);
+
 
         this.activeClass = 'active';
 
@@ -15,9 +16,8 @@ class MobileNavBar {
         this.navLinks.forEach((link, index) => {
             link.style.animation ?
                 (link.style.animation = '') :
-                (link.style.animation = `navLinkFade 0.5s forwards ${index / 7 + 0.3}s`)
+                (link.style.animation = `navLinkFade 0.5s forwards ${index / 7 + 0.3}s`);
         });
-
     }
 
 
@@ -45,6 +45,7 @@ const mobileNavBar = new MobileNavBar(
     ".mobile-menu",
     ".nav-item",
     ".nav-item li",
+    ".btn-link"
 
 )
 
